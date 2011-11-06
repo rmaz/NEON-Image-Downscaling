@@ -1,0 +1,1 @@
+A simple method to downscale images by a factor of 2 using inline assembly and NEON instructions on iOS. The NEON resize method executes in roughly 1/8th of the time.

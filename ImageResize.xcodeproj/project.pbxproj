@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79C5E7A214669CE600B74DEB /* lena.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C5E7A114669CE600B74DEB /* lena.png */; };
+		79D14FEA1460AD1C0044F411 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D14FE91460AD1C0044F411 /* UIKit.framework */; };
+		79D14FEC1460AD1C0044F411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D14FEB1460AD1C0044F411 /* Foundation.framework */; };
+		79D14FEE1460AD1C0044F411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D14FED1460AD1C0044F411 /* CoreGraphics.framework */; };
+		79D14FF41460AD1C0044F411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D14FF21460AD1C0044F411 /* InfoPlist.strings */; };
+		79D14FF61460AD1C0044F411 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D14FF51460AD1C0044F411 /* main.m */; };
+		79D14FFA1460AD1C0044F411 /* BDPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D14FF91460AD1C0044F411 /* BDPAppDelegate.m */; };
+		79D14FFD1460AD1C0044F411 /* BDPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D14FFC1460AD1C0044F411 /* BDPViewController.m */; };
+		79D150001460AD1C0044F411 /* BDPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D14FFE1460AD1C0044F411 /* BDPViewController_iPhone.xib */; };
+		79D150031460AD1C0044F411 /* BDPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D150011460AD1C0044F411 /* BDPViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79C5E7A114669CE600B74DEB /* lena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lena.png; sourceTree = "<group>"; };
+		79D14FE51460AD1C0044F411 /* ImageResize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageResize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D14FE91460AD1C0044F411 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79D14FEB1460AD1C0044F411 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79D14FED1460AD1C0044F411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79D14FF11460AD1C0044F411 /* ImageResize-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageResize-Info.plist"; sourceTree = "<group>"; };
+		79D14FF31460AD1C0044F411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79D14FF51460AD1C0044F411 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79D14FF71460AD1C0044F411 /* ImageResize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageResize-Prefix.pch"; sourceTree = "<group>"; };
+		79D14FF81460AD1C0044F411 /* BDPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPAppDelegate.h; sourceTree = "<group>"; };
+		79D14FF91460AD1C0044F411 /* BDPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPAppDelegate.m; sourceTree = "<group>"; };
+		79D14FFB1460AD1C0044F411 /* BDPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPViewController.h; sourceTree = "<group>"; };
+		79D14FFC1460AD1C0044F411 /* BDPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPViewController.m; sourceTree = "<group>"; };
+		79D14FFF1460AD1C0044F411 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BDPViewController_iPhone.xib; sourceTree = "<group>"; };
+		79D150021460AD1C0044F411 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BDPViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D14FE21460AD1C0044F411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D14FEA1460AD1C0044F411 /* UIKit.framework in Frameworks */,
+				79D14FEC1460AD1C0044F411 /* Foundation.framework in Frameworks */,
+				79D14FEE1460AD1C0044F411 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79D14FDA1460AD1C0044F411 = {
+			isa = PBXGroup;
+			children = (
+				79D14FEF1460AD1C0044F411 /* ImageResize */,
+				79D14FE81460AD1C0044F411 /* Frameworks */,
+				79D14FE61460AD1C0044F411 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79D14FE61460AD1C0044F411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D14FE51460AD1C0044F411 /* ImageResize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79D14FE81460AD1C0044F411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D14FE91460AD1C0044F411 /* UIKit.framework */,
+				79D14FEB1460AD1C0044F411 /* Foundation.framework */,
+				79D14FED1460AD1C0044F411 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79D14FEF1460AD1C0044F411 /* ImageResize */ = {
+			isa = PBXGroup;
+			children = (
+				79D14FF81460AD1C0044F411 /* BDPAppDelegate.h */,
+				79D14FF91460AD1C0044F411 /* BDPAppDelegate.m */,
+				79D14FFB1460AD1C0044F411 /* BDPViewController.h */,
+				79D14FFC1460AD1C0044F411 /* BDPViewController.m */,
+				79D14FFE1460AD1C0044F411 /* BDPViewController_iPhone.xib */,
+				79D150011460AD1C0044F411 /* BDPViewController_iPad.xib */,
+				79D14FF01460AD1C0044F411 /* Supporting Files */,
+			);
+			path = ImageResize;
+			sourceTree = "<group>";
+		};
+		79D14FF01460AD1C0044F411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79C5E7A114669CE600B74DEB /* lena.png */,
+				79D14FF11460AD1C0044F411 /* ImageResize-Info.plist */,
+				79D14FF21460AD1C0044F411 /* InfoPlist.strings */,
+				79D14FF51460AD1C0044F411 /* main.m */,
+				79D14FF71460AD1C0044F411 /* ImageResize-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D14FE41460AD1C0044F411 /* ImageResize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D150061460AD1C0044F411 /* Build configuration list for PBXNativeTarget "ImageResize" */;
+			buildPhases = (
+				79D14FE11460AD1C0044F411 /* Sources */,
+				79D14FE21460AD1C0044F411 /* Frameworks */,
+				79D14FE31460AD1C0044F411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageResize;
+			productName = ImageResize;
+			productReference = 79D14FE51460AD1C0044F411 /* ImageResize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79D14FDC1460AD1C0044F411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = BDP;
+			};
+			buildConfigurationList = 79D14FDF1460AD1C0044F411 /* Build configuration list for PBXProject "ImageResize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79D14FDA1460AD1C0044F411;
+			productRefGroup = 79D14FE61460AD1C0044F411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79D14FE41460AD1C0044F411 /* ImageResize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79D14FE31460AD1C0044F411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D14FF41460AD1C0044F411 /* InfoPlist.strings in Resources */,
+				79D150001460AD1C0044F411 /* BDPViewController_iPhone.xib in Resources */,
+				79D150031460AD1C0044F411 /* BDPViewController_iPad.xib in Resources */,
+				79C5E7A214669CE600B74DEB /* lena.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D14FE11460AD1C0044F411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D14FF61460AD1C0044F411 /* main.m in Sources */,
+				79D14FFA1460AD1C0044F411 /* BDPAppDelegate.m in Sources */,
+				79D14FFD1460AD1C0044F411 /* BDPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79D14FF21460AD1C0044F411 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D14FF31460AD1C0044F411 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79D14FFE1460AD1C0044F411 /* BDPViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D14FFF1460AD1C0044F411 /* en */,
+			);
+			name = BDPViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		79D150011460AD1C0044F411 /* BDPViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D150021460AD1C0044F411 /* en */,
+			);
+			name = BDPViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79D150041460AD1C0044F411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79D150051460AD1C0044F411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79D150071460AD1C0044F411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageResize/ImageResize-Prefix.pch";
+				INFOPLIST_FILE = "ImageResize/ImageResize-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79D150081460AD1C0044F411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageResize/ImageResize-Prefix.pch";
+				INFOPLIST_FILE = "ImageResize/ImageResize-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79D14FDF1460AD1C0044F411 /* Build configuration list for PBXProject "ImageResize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D150041460AD1C0044F411 /* Debug */,
+				79D150051460AD1C0044F411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D150061460AD1C0044F411 /* Build configuration list for PBXNativeTarget "ImageResize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D150071460AD1C0044F411 /* Debug */,
+				79D150081460AD1C0044F411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79D14FDC1460AD1C0044F411 /* Project object */;
+}

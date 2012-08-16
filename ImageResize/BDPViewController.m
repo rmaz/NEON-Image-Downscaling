@@ -44,8 +44,8 @@ static void inline resizeRow(uint32_t * __restrict dst, uint32_t * __restrict sr
                      "vst1.64       {d0-d1}, [%0]!      \n" // store the result
                      "subs          %3, %3, #8          \n" // subtract 8 from the pixel count
                      "bne           0b                  \n" // repeat until the row is complete
-					 :
-					 : "r"(dst), "r"(src), "r"(rowB), "r"(pixelsPerRow)
+					 : "+r"(dst), "+r"(src), "+r"(rowB), "+r"(pixelsPerRow)
+					 : 
 					 : "q0", "q1", "q2", "q3"
 					 );
 }
@@ -94,21 +94,25 @@ static CGContextRef createBitmapContext(void *data, size_t width, size_t height,
     CFDataRef data = CGDataProviderCopyData(CGImageGetDataProvider(image.CGImage));
     const uint8_t *buffer = CFDataGetBytePtr(data);
     
-    // downscale the image in place
+    // create an output buffer
+    uint8_t *outputBuffer = calloc(width * height / 4, sizeof(uint32_t));
+    
+    // downscale the image
     for (size_t rowIndex = 0; rowIndex < height; rowIndex+=2)
     {
         void *sourceRow = (uint8_t *)buffer + rowIndex * bytesPerRow;
-        void *destRow = (uint8_t *)buffer + (rowIndex / 2) * bytesPerRow;
+        void *destRow = outputBuffer + (rowIndex / 2) * (bytesPerRow / 2);
         resizeRow(destRow, sourceRow, width);
     }
 
     // get the output image
-    CGContextRef context = createBitmapContext((void *)buffer, width / 2, height / 2, bytesPerRow, imageAlpha);
+    CGContextRef context = createBitmapContext(outputBuffer, width / 2, height / 2, bytesPerRow / 2, imageAlpha);
     CGImageRef scaledImage = CGBitmapContextCreateImage(context);
     UIImage *returnImage = [UIImage imageWithCGImage:scaledImage];
     CGImageRelease(scaledImage);
     CGContextRelease(context);
-    CFRelease(data);    
+    CFRelease(data);
+    free(outputBuffer);
     
     return returnImage;
 }

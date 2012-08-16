@@ -22,14 +22,14 @@
 
 #pragma mark - Image Resize
 
-static void inline resizeRow(uint32_t * __restrict dst, uint32_t * __restrict src, uint32_t pixelsPerRow)
+static void inline resizeRow(uint32_t *dst, uint32_t *src, uint32_t pixelsPerRow)
 {
     const uint32_t * rowB = src + pixelsPerRow;
     
     // force the number of pixels per row to a mutliple of 8
     pixelsPerRow = 8 * (pixelsPerRow / 8);    
     
-    __asm__ volatile("0:                                \n" // start loop
+    __asm__ volatile("Lresizeloop:                      \n" // start loop
                      "vld1.32       {d0-d3}, [%1]!      \n" // load 8 pixels from the top row
                      "vld1.32       {d4-d7}, [%2]!      \n" // load 8 pixels from the bottom row
                      "vhadd.u8      q0, q0, q2          \n" // average the pixels vertically
@@ -43,9 +43,9 @@ static void inline resizeRow(uint32_t * __restrict dst, uint32_t * __restrict sr
                      "vswp          d1, d2              \n"
                      "vst1.64       {d0-d1}, [%0]!      \n" // store the result
                      "subs          %3, %3, #8          \n" // subtract 8 from the pixel count
-                     "bne           0b                  \n" // repeat until the row is complete
-					 : "+r"(dst), "+r"(src), "+r"(rowB), "+r"(pixelsPerRow)
-					 : 
+                     "bne           Lresizeloop         \n" // repeat until the row is complete
+					 : "=r"(dst), "=r"(src), "=r"(rowB), "=r"(pixelsPerRow)
+					 : "0"(dst), "1"(src), "2"(rowB), "3"(pixelsPerRow)
 					 : "q0", "q1", "q2", "q3"
 					 );
 }
